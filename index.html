@@ -25,21 +25,24 @@
       top: 0;
       z-index: 1000;
     }
-    header img {
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white; /* Prevents turning red */
+    }
+    .logo svg {
       height: 48px;
-      width: auto;
-      filter: brightness(0) invert(1) drop-shadow(0 0 3px rgba(0,0,0,0.4)); /* makes logo white + prominent */
+      width: 48px;
+      fill: white;
+      filter: drop-shadow(0 0 3px rgba(0,0,0,0.4));
     }
     .logo-text {
-      line-height: 1.2;
-    }
-    .logo-text div:first-child {
+      font-size: 20px;
       font-weight: 700;
-      font-size: 18px;
-    }
-    .logo-text div:last-child {
-      font-size: 13px;
-      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.5px;
+      color: white; /* Always white */
     }
 
     nav a {
@@ -150,12 +153,12 @@
 <body>
   <!-- Header -->
   <header>
-    <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-      <img src="logo.svg" alt="Sharafat Developer Logo">
-      <div class="logo-text">
-        <div>Sharafat</div>
-        <div>Developer — Software Solutions</div>
-      </div>
+    <a href="index.html" class="logo">
+      <!-- Futuristic White Logo (SVG) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z"/>
+      </svg>
+      <div class="logo-text">Sharafat</div>
     </a>
     <nav>
       <a href="index.html">Home</a>
