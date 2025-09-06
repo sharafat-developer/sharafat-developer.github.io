@@ -25,32 +25,58 @@
       top: 0;
       z-index: 1000;
     }
-   .logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: white;
-}
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-decoration: none;
+    }
+    
+    .logo-placeholder {
+      width: 55px;
+      height: 55px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .logo-text .title {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      line-height: 1.2;
+    }
+    
+    .logo-text .subtitle {
+      font-size: 12px;
+      font-weight: 600;
+      color: #d1d5db;
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
 
-.logo-img {
-  height: 55px; /* adjust size */
-  width: auto;
-}
-
-.logo-text .title {
-  font-size: 20px;
-  font-weight: 700;
-  color: white;
-}
-
-.logo-text .subtitle {
-  font-size: 13px;
-  font-weight: 400;
-  color: #d1d5db; /* soft gray */
-  margin-top: 2px;
-}
-
+    /* Navigation styles - fixed size to match original */
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    
+    header nav a:hover {
+      color: #facc15;
+    }
 
     /* ---------- Hero Section ---------- */
     .hero {
@@ -147,11 +173,14 @@
   <!-- Header -->
   <header>
     <a href="index.html" class="logo">
-      <!-- Futuristic White Logo (SVG) -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z"/>
-      </svg>
-      <div class="logo-text">Sharafat</div>
+      <!-- Logo placeholder (you can replace this later) -->
+      <div class="logo-placeholder">
+        <span style="color: white; font-size: 12px;">LOGO</span>
+      </div>
+      <div class="logo-text">
+        <div class="title">Sharafat Developer</div>
+        <div class="subtitle">SOFTWARE SOLUTIONS</div>
+      </div>
     </a>
     <nav>
       <a href="index.html">Home</a>
@@ -166,7 +195,7 @@
   <section class="hero">
     <h2>Innovating Ideas into Digital Reality</h2>
     <p>We create world-class websites, mobile apps, and business solutions for global clients.  
-       Let’s work together and turn your vision into reality.</p>
+       Let's work together and turn your vision into reality.</p>
     <a href="projects.html" class="btn">Work With Us</a>
   </section>
 
