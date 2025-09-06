@@ -33,14 +33,9 @@
       text-decoration: none;
     }
     
-    .logo-placeholder {
+    .logo-svg {
       width: 55px;
       height: 55px;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     
     .logo-text {
@@ -64,7 +59,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* Navigation styles - fixed size to match original */
+    /* Navigation styles */
     header nav a {
       color: white;
       text-decoration: none;
@@ -173,10 +168,19 @@
   <!-- Header -->
   <header>
     <a href="index.html" class="logo">
-      <!-- Logo placeholder (you can replace this later) -->
-      <div class="logo-placeholder">
-        <span style="color: white; font-size: 12px;">LOGO</span>
-      </div>
+      <!-- Custom SVG Logo -->
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#facc15" />
+            <stop offset="100%" stop-color="#fbbf24" />
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.1)" stroke="url(#gradient)" stroke-width="2"/>
+        <path d="M35,30 L65,30 L75,50 L65,70 L35,70 L25,50 Z" fill="none" stroke="url(#gradient)" stroke-width="2"/>
+        <circle cx="50" cy="50" r="10" fill="none" stroke="url(#gradient)" stroke-width="2"/>
+        <path d="M40,40 L60,60 M60,40 L40,60" stroke="url(#gradient)" stroke-width="2"/>
+      </svg>
       <div class="logo-text">
         <div class="title">Sharafat Developer</div>
         <div class="subtitle">SOFTWARE SOLUTIONS</div>
