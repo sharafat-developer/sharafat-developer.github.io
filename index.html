@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sharafat Ali — Freelance App & Software Developer</title>
+  <meta name="description" content="Freelance mobile & web developer. Payment integrations, Solana/USDC rails, API development." />
+  <style>
+    :root{--bg:#f7fafc;--card:#fff;--accent:#0b2447;--muted:#64748b}
+    *{box-sizing:border-box}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;margin:0;background:var(--bg);color:#0b1726}
+    .wrap{max-width:1000px;margin:18px auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    h1{margin:0;font-size:28px;color:var(--accent)}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;display:inline-block}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(15,23,42,0.04);margin-top:16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .service{padding:12px;border-radius:10px;border:1px solid #eef2f7}
+    footer{color:var(--muted);text-align:center;margin:20px 0;font-size:13px}
+    a{color:var(--accent)}
+    @media(max-width:520px){h1{font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Sharafat Ali</h1>
+        <div class="tagline"><p class="lead">Freelance App & Software Developer — Mobile, Web & Payment Integrations</p></div>
+      </div>
+      <div>
+        <a class="btn" href="mailto:youremail@example.com">Contact</a>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>About</h2>
+      <p>I build mobile apps, web backends, and payment integrations for clients worldwide. Specialties: Flutter apps, Node/Express APIs, Solana/USDC rails, UPI & local integrations.</p>
+    </section>
+
+    <section class="card">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="service"><strong>Mobile App Development</strong><p>Flutter / Android / iOS, UI/UX, testing and Play/App Store support.</p></div>
+        <div class="service"><strong>Web & Backend</strong><p>React, Next.js, Node.js, REST & GraphQL APIs, DB design.</p></div>
+        <div class="service"><strong>Payments & Crypto</strong><p>JazzCash, UPI via aggregators, Solana Pay (USDC), Binance P2P flows.</p></div>
+        <div class="service"><strong>Consulting</strong><p>Deployment, security review, payment architecture, scaling advice.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <div class="service"><strong>Demo Betting App (Flutter)</strong><p>Game demo, wallet, and payment integration. <a href="#" target="_blank">GitHub</a></p></div>
+        <div class="service"><strong>Payment Integration Demo</strong><p>Solana Pay + USDC flow and Binance P2P automation.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Telegram: <em>@yourhandle</em></p>
+      <p><a class="btn" href="#" id="pay">Pay / Demo</a></p>
+    </section>
+
+    <footer class="card">
+      <div style="text-align:center">© <span id="yr"></span> Sharafat Ali — Freelance Digital Services</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('yr').innerText=(new Date()).getFullYear()</script>
+</body>
+</html>
